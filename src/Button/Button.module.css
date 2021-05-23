@@ -1,0 +1,17 @@
+.Button {
+  padding: 0.7rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 0px;
+  transition: 0.2s;
+  width: fit-content;
+  margin: 4rem auto;
+  display: flex;
+}
+.Button:hover {
+  background-color: #0f6990;
+  color: white;
+  border-color: #0f6990;
+}

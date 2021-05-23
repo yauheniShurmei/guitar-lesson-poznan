@@ -1,0 +1,53 @@
+.Home_content {
+  max-width: 65%;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Home_content h1 {
+  color: #0f6990;
+  font-weight: lighter;
+  font-size: 4rem;
+  border-bottom: 1px solid gray;
+  display: inline-block;
+}
+.Home_content span {
+  font-size: 1.1rem;
+  flex: 1;
+  width: 80%;
+}
+
+.AboutMe {
+  display: flex;
+}
+.AboutMe img {
+  width: 100%;
+  height: auto;
+  margin: 20px 20px;
+  border-radius: 5%;
+}
+.AboutMe div {
+  width: 10rem;
+}
+
+.AboutMe li {
+  font-size: 2rem;
+}
+.AboutMe ul {
+  margin: auto;
+}
+.CzegoSieNauczysz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+}
+
+@media (max-width: 399px) {
+  .Home_content {
+    max-width: 90%;
+  }
+  .AboutMe {
+    flex-direction: column;
+  }
+}

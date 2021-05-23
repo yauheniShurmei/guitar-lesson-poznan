@@ -1,0 +1,45 @@
+.Header {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 34px;
+  border-bottom: 1px solid gray;
+  display: inline;
+}
+.Header span {
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: rgb(73, 73, 73);
+}
+
+.Contacts {
+  text-align: center;
+}
+.Contacts a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  display: block;
+  margin: 5px;
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+}
+
+.Phone {
+  font-size: 22px;
+}
+.Email {
+  font-size: 17px;
+}
+
+@media (max-width: 500px) {
+  .Header {
+    width: 90%;
+  }
+}
