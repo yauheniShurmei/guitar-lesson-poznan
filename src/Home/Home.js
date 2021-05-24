@@ -49,7 +49,7 @@ const Home = () => {
               Ad veniam adipisicing nostrud qui pariatur Lorem tempor.
             </span>
           </div>
-          <Button>Zapisz się na Lekcję</Button>
+          <Button to={"/zapiszsie"}>Zapisz się na Lekcję</Button>
         </div>
         <div>
           <h1>Nauka na każdym poźiomie</h1>
@@ -68,7 +68,7 @@ const Home = () => {
               nostrud anim ad laborum.
             </span>
           </div>
-          <Button>Zapisz się na Lekcję</Button>
+          <Button to={"/zapiszsie"}>Zapisz się na Lekcję</Button>
         </div>
         <div className={classes.CzegoSieNauczysz}>
           <h1>Czego Się Nauczysz</h1>
@@ -82,7 +82,7 @@ const Home = () => {
               <li>Grać palcami i kostką</li>
             </ul>
           </div>
-          <Button>Zapisz się na Lekcję</Button>
+          <Button to={"/zapiszsie"}>Zapisz się na Lekcję</Button>
         </div>
       </div>
     </div>
