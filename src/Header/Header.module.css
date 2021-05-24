@@ -37,9 +37,26 @@
 .Email {
   font-size: 17px;
 }
+@media (max-width: 700px) {
+  .Header {
+    width: 90%;
+  }
+  .Phone {
+    font-size: 20px;
+  }
+  .Email {
+    font-size: 17px;
+  }
+}
 
 @media (max-width: 500px) {
   .Header {
     width: 90%;
+  }
+  .Phone {
+    font-size: 16px;
+  }
+  .Email {
+    font-size: 15px;
   }
 }

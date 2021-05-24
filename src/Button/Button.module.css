@@ -9,9 +9,21 @@
   width: fit-content;
   margin: 4rem auto;
   display: flex;
+  text-decoration: none;
+  color: black;
 }
+
 .Button:hover {
   background-color: #0f6990;
   color: white;
   border-color: #0f6990;
+}
+
+@media (max-width: 450px) {
+  .Button {
+    background-color: #0f6990;
+    border: none;
+    transition: 0s;
+    color: white;
+  }
 }

@@ -43,11 +43,22 @@
   width: fit-content;
 }
 
-@media (max-width: 399px) {
+@media (max-width: 800px) {
   .Home_content {
-    max-width: 90%;
+    max-width: 100%;
+  }
+  .Home_content h1 {
+    margin-left: 10%;
+    display: inline-block;
   }
   .AboutMe {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .AboutMe div {
+    width: 13rem;
+    margin: auto;
+    text-align: center;
   }
 }
