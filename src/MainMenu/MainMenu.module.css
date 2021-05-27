@@ -73,7 +73,8 @@ a:active {
   .Close.Links {
     transition: 0.5s;
     /* display: none; */
-    transform: scale(0);
+    transform: scaleX(5) scale(0);
+    opacity: 0;
     height: 0;
   }
   .Open.Links {
