@@ -20,10 +20,4 @@
 }
 
 @media (max-width: 450px) {
-  .Button {
-    background-color: #0f6990;
-    border: none;
-    transition: 0s;
-    color: white;
-  }
 }

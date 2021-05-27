@@ -8,7 +8,7 @@ const Header = () => {
         <div>
           <h1>Lekcje Gry Na Gitarze</h1>
           <br></br>
-          <span>Poaznań i Online</span>
+          <span>Poznań i Online</span>
         </div>
         <div className={classes.Contacts}>
           <a className={classes.Phone} href="tel:+(48)732-188-593">

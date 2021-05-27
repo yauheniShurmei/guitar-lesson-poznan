@@ -23,11 +23,11 @@
 .AboutMe img {
   width: 100%;
   height: auto;
-  margin: 20px 20px;
   border-radius: 5%;
 }
 .AboutMe div {
   width: 10rem;
+  padding-top: 20px;
 }
 
 .AboutMe li {
