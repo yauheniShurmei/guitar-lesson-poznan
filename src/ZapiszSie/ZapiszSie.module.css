@@ -1,7 +1,7 @@
 .Photo {
   /* height: 300px; */
   width: 100%;
-  background-image: url("../assets/img/guitar_03.jpg");
+  /* background-image: url("../assets/img/guitar_03.jpg"); */
   aspect-ratio: 5;
   background-position: center;
   background-size: cover;
