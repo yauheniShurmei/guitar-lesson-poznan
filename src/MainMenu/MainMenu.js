@@ -1,12 +1,17 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import classes from "./MainMenu.module.css";
 
 const MainMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
-  const openMenuHandler = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMenu, setIsMenu] = useState("MENU");
+
+  const openMenuHandler = (menu) => {
     setIsOpen(!isOpen);
+    setIsMenu(menu);
   };
 
   let navBarClasses = [];
@@ -14,15 +19,19 @@ const MainMenu = () => {
     ? (navBarClasses = [classes.Links, classes.Open])
     : (navBarClasses = [classes.Links, classes.Close]);
 
+  if (location.pathname) {
+    console.log(location.pathname);
+  }
+
   return (
     <div className={classes.NavBar}>
       <div
         className={
           !isOpen ? classes.Menu : [`${classes.MenuOpen} ${classes.Menu}`]
         }
-        onClick={openMenuHandler}
+        onClick={() => openMenuHandler(isMenu)}
       >
-        Menu
+        {isMenu.toUpperCase()}
         <div
           className={
             isOpen
@@ -35,12 +44,48 @@ const MainMenu = () => {
         </div>
       </div>
       <div className={navBarClasses.join(" ")}>
-        <Link to="/home">Home</Link>
-        <Link to="/zapiszsie">Zapisz Się</Link>
-        <Link to="/komentarze">Komentarze</Link>
-        <Link to="/FAQ">FAQ</Link>
-        <Link to="/materialy">Materjały</Link>
-        <Link to="/gift-sertificats">Sertyfikaty podarunkowe</Link>
+        <NavLink
+          onClick={() => openMenuHandler("HOME")}
+          activeClassName={classes.Active}
+          to="/home"
+        >
+          Home
+        </NavLink>
+        <NavLink
+          onClick={() => openMenuHandler("Zapisz Sie")}
+          activeClassName={classes.Active}
+          to="/zapiszsie"
+        >
+          Zapisz Się
+        </NavLink>
+        <NavLink
+          onClick={() => openMenuHandler("komentarze")}
+          activeClassName={classes.Active}
+          to="/komentarze"
+        >
+          Komentarze
+        </NavLink>
+        <NavLink
+          onClick={() => openMenuHandler("FAQ")}
+          activeClassName={classes.Active}
+          to="/FAQ"
+        >
+          FAQ
+        </NavLink>
+        <NavLink
+          onClick={() => openMenuHandler("materialy")}
+          activeClassName={classes.Active}
+          to="/materialy"
+        >
+          Materjały
+        </NavLink>
+        <NavLink
+          onClick={() => openMenuHandler("gift-sertificats")}
+          activeClassName={classes.Active}
+          to="/gift-sertificats"
+        >
+          Sertyfikaty podarunkowe
+        </NavLink>
       </div>
     </div>
   );

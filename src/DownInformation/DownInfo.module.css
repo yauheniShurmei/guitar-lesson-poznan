@@ -7,12 +7,18 @@
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   text-align: center;
-  background-color: rgb(238, 238, 238);
+  background-color: #0f6990;
+  color: white;
+}
+.DownInfo a {
+  text-decoration: none;
+  color: white;
 }
 .DownInfo h3 {
   font-weight: lighter;
-  color: #0f6990;
+  color: #ffffff;
 }
 .DownInfo div {
   margin: 20px 0;
+  flex: 1;
 }

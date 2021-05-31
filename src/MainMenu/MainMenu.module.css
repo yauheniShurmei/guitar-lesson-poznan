@@ -18,32 +18,25 @@
   align-items: center;
   transition: 0.3s;
 }
+
+/* ACTIVE LINK --------------------------- */
 .Links a:hover,
-a:active {
+a:active,
+a.Active {
   background-color: #0f6990;
   color: white;
   transition: 0.3s;
 }
-
-/* .NavInitial {
-  display: flex;
-  flex-direction: row;
-  display: block;
-  background-color: blanchedalmond;
-  height: auto;
-  transition: 1s;
-} */
+/* ACTIVE LINK --------------------------- */
 
 .Menu {
   display: none;
-  /* padding-bottom: 10px; */
   box-sizing: border-box;
 }
 
 /* MENU ARROW --------------------------- */
 .MenuArrowClose,
 .MenuArrowOpen {
-  /* margin-left: 10px; */
   display: flex;
   justify-content: center;
 }
@@ -66,27 +59,24 @@ a:active {
 .MenuArrowOpen div:nth-of-type(2) {
   transform: translateX(-0.3px) rotate(22deg) translateY(2px);
 }
-
 /* MENU ARROW --------------------------- */
 
 @media (max-width: 760px) {
   .Close.Links {
-    transition: 0.5s;
+    transition: 0.5s ease-out;
     /* display: none; */
     transform: scaleX(5) scale(0);
     opacity: 0;
     height: 0;
   }
   .Open.Links {
-    transition: 0.5s;
+    transition: 0.5s ease-out;
     height: 100%;
-    /* display: block; */
     transform: scale(1);
-    height: 400px;
+    height: 300px;
   }
   .MenuOpen {
     padding-bottom: 10px;
-    /* border-bottom: 1px solid rgb(196, 196, 196); */
     box-sizing: border-box;
   }
   .Links {
