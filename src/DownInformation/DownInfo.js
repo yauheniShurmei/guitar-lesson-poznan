@@ -10,7 +10,11 @@ const DownInfo = () => {
       </div>
       <div>
         <h3>LOKALIZACJA</h3>
-        <a target="_blank" href="https://goo.gl/maps/dpQ9Rfk8BaesYTWk7">
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://goo.gl/maps/dpQ9Rfk8BaesYTWk7"
+        >
           Poznań Grunwald Opalenicka
         </a>
       </div>
