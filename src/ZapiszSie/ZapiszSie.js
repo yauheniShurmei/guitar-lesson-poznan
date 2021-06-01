@@ -2,7 +2,6 @@ import classes from "./ZapiszSie.module.css";
 import homeClasses from "../Home/Home.module.css";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import { useState } from "react";
 
 const ZapiszSie = () => {
   return (
