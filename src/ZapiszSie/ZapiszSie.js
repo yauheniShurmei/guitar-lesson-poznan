@@ -5,7 +5,6 @@ import "react-calendar/dist/Calendar.css";
 import { useState } from "react";
 
 const ZapiszSie = () => {
-  const [value, onChange] = useState(new Date());
   console.log(value);
 
   return (
