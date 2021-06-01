@@ -1,0 +1,34 @@
+.Main {
+  max-width: 65%;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main h1 {
+  max-width: fit-content;
+  text-align: center;
+  color: #0f6990;
+  font-weight: lighter;
+  font-size: 3rem;
+  border-bottom: 1px solid gray;
+  display: inline-block;
+}
+.Main h2 {
+  max-width: fit-content;
+  text-align: center;
+  color: #0f6990;
+  font-weight: lighter;
+  font-size: 2rem;
+  border-bottom: 1px solid gray;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .Main {
+    max-width: 100%;
+  }
+}

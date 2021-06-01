@@ -1,11 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import classes from "./MainMenu.module.css";
 
 const MainMenu = () => {
-  const location = useLocation();
-
   const [isOpen, setIsOpen] = useState(false);
   const [isMenu, setIsMenu] = useState("MENU");
 
@@ -18,10 +15,6 @@ const MainMenu = () => {
   isOpen
     ? (navBarClasses = [classes.Links, classes.Open])
     : (navBarClasses = [classes.Links, classes.Close]);
-
-  if (location.pathname) {
-    console.log(location.pathname);
-  }
 
   return (
     <div className={classes.NavBar}>
@@ -77,14 +70,14 @@ const MainMenu = () => {
           activeClassName={classes.Active}
           to="/materialy"
         >
-          Materjały
+          Materiały
         </NavLink>
         <NavLink
           onClick={() => openMenuHandler("gift-sertificats")}
           activeClassName={classes.Active}
           to="/gift-sertificats"
         >
-          Sertyfikaty podarunkowe
+          Certyfikaty podarunkowe
         </NavLink>
       </div>
     </div>

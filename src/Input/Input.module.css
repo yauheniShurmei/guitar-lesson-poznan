@@ -1,0 +1,17 @@
+.Input {
+  display: flex;
+  margin: auto;
+}
+
+.Input input {
+  margin: 10px auto;
+  height: 30px;
+  width: 50%;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 800px) {
+  .Input input {
+    width: 85%;
+  }
+}

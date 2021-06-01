@@ -2,3 +2,9 @@
   min-width: 100%;
   aspect-ratio: 5;
 }
+
+@media (max-width: 800px) {
+  .PhotoBlock div {
+    aspect-ratio: 3;
+  }
+}
