@@ -12,7 +12,7 @@ const DownInfo = () => {
         <h3>LOKALIZACJA</h3>
         <a
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           href="https://goo.gl/maps/dpQ9Rfk8BaesYTWk7"
         >
           Poznań Grunwald Opalenicka
