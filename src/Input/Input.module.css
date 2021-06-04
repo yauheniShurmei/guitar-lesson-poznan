@@ -1,17 +1,44 @@
 .Input {
   display: flex;
   margin: auto;
+  flex-direction: column;
 }
-
+.Input label,
+.Textarea label {
+  width: 60%;
+  margin: auto;
+}
 .Input input {
   margin: 10px auto;
   height: 30px;
-  width: 50%;
+  width: 60%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Textarea {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.Textarea textarea {
+  margin: 10px auto;
+  height: 50px;
+  width: 60%;
   font-family: "Open Sans", sans-serif;
 }
 
 @media (max-width: 800px) {
-  .Input input {
+  .Input input,
+  .Textarea textarea {
     width: 85%;
+  }
+
+  .Input label {
+    width: 85%;
+    margin: auto;
+  }
+  .Textarea label {
+    width: 85%;
+    margin: auto;
   }
 }

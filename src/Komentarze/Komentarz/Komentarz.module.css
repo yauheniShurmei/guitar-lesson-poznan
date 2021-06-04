@@ -1,0 +1,11 @@
+.Komentarz {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.Komentarz img {
+  width: 3em;
+  border-radius: 25px;
+  margin-right: 20px;
+}
