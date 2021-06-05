@@ -1,10 +1,13 @@
-.PhotoBlock div {
-  min-width: 100%;
+.Photo {
+  width: 100%;
+  background-image: url("../assets/img/guitar_01.jpg");
   aspect-ratio: 5;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 800px) {
-  .PhotoBlock div {
+  .Photo {
     aspect-ratio: 3;
   }
 }

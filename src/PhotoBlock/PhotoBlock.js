@@ -1,19 +1,7 @@
 import classes from "./PhotoBlock.module.css";
 
-const PhotoBlock = () => {
-  return (
-    <div className={classes.PhotoBlock}>
-      <div
-        style={{
-          backgroundImage: `url(${
-            process.env.PUBLIC_URL + "/images/guitar_01.jpg"
-          })`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
-      ></div>
-    </div>
-  );
+const PhotoBlock = (props) => {
+  return <div className={classes.Photo} style={props.style}></div>;
 };
 
 export default PhotoBlock;

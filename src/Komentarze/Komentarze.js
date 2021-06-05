@@ -8,8 +8,6 @@ const Komentarze = () => {
   const [isLoad, setIsLoad] = useState(false);
   const [comments, setComments] = useState(null);
 
-  console.log(isLoad, "COMPONENT");
-
   const nameInputRef = useRef();
   const emailInputRef = useRef();
   const commentInputRef = useRef();
@@ -31,22 +29,18 @@ const Komentarze = () => {
               />
             );
           });
-
           setComments(comments);
-          console.log("loadComments Function");
         }
       });
   };
 
   useEffect(() => {
     loadComments();
-    console.log("USE EFFECT");
     isLoad && setIsLoad(false);
   }, [isLoad]);
 
   async function submitHandler(event) {
     event.preventDefault();
-
     if (
       nameInputRef.current.value &&
       emailInputRef.current.value &&
