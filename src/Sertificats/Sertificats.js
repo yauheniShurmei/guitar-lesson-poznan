@@ -12,28 +12,31 @@ const Sertificats = () => {
         <div>
           <img src={certyfikat_01_640x425} alt="guitar lesson" />
           <p>50zł</p>
-          <h3>Jedna Lekcja Gitary</h3>
-          <span>Jedna godzina (60 minut) zajęć</span>
+          <h3>Jedna Lekcja</h3>
+          <span>Jedna godzina zajęć</span>
         </div>
         <div>
           <img src={certyfikat_02_640x425} alt="guitar lesson" />
           <p>100zł</p>
-          <h3>Dwie Lekcja Gitary</h3>
-          <span>Dwie godzina (60 minut) zajęć</span>
+          <h3>Dwie Lekcji</h3>
+          <span>Dwie godziny zajęć</span>
         </div>
         <div>
           <img src={certyfikat_03_640x425} alt="guitar lesson" />
           <p>150zł</p>
-          <h3>Trzy Lekcja Gitary</h3>
-          <span>Trzy godzina (60 minut) zajęć</span>
+          <h3>Trzy Lekcji</h3>
+          <span>Trzy godziny zajęć</span>
         </div>
         <div>
           <img src={certyfikat_04_640x425} alt="guitar lesson" />
           <p>200zł</p>
-          <h3>Cztery Lekcja Gitary</h3>
-          <span>Cztery godzina (60 minut) zajęć</span>
+          <h3>Cztery Lekcji</h3>
+          <span>Cztery godziny zajęć</span>
         </div>
       </div>
+      <span style={{ marginTop: "20px" }}>
+        * Jedna lekcja trwa 45 minut dla dzieci, 60 minut dla dorosłych
+      </span>
     </div>
   );
 };
