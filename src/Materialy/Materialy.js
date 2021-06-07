@@ -45,7 +45,7 @@ const Materialy = () => {
     const newIndex = index < 0 ? index + 7 : index;
     console.log(newIndex);
     setBookIndex(pages[newIndex]);
-  }, [index]);
+  }, [index, pages]);
 
   const nextPrevPagesHandler = (isForward) => {
     if (isForward) {
