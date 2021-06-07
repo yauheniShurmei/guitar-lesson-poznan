@@ -25,6 +25,11 @@ const Materialy = () => {
   const [bookIndex, setBookIndex] = useState();
   const [index, setIndex] = useState(0);
 
+  useEffect(() => {
+    const newIndex = index < 0 ? index + 7 : index;
+    setBookIndex(pages[newIndex]);
+  }, [index, pages]);
+
   const clickHandler = (bookIndex) => {
     if (bookIndex) {
       setIsOpen((prevState) => !prevState);
@@ -40,19 +45,11 @@ const Materialy = () => {
     }
   };
 
-  useEffect(() => {
-    console.log(index);
-    const newIndex = index < 0 ? index + 7 : index;
-    console.log(newIndex);
-    setBookIndex(pages[newIndex]);
-  }, [index, pages]);
-
   const nextPrevPagesHandler = (isForward) => {
     if (isForward) {
       setIndex((prevState) => (prevState + 1) % 7);
     } else {
       setIndex((prevState) => (prevState - 1) % 7);
-      //   setBookIndex(pages[index]);
     }
   };
 
