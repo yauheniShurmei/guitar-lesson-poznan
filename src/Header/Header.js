@@ -3,7 +3,7 @@ import MainMenu from "../MainMenu/MainMenu";
 
 const Header = () => {
   return (
-    <div>
+    <header>
       <div className={classes.Header}>
         <div>
           <h1>Lekcje Gry Na Gitarze</h1>
@@ -20,7 +20,7 @@ const Header = () => {
         </div>
       </div>
       <MainMenu />
-    </div>
+    </header>
   );
 };
 

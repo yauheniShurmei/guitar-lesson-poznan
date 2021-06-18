@@ -73,11 +73,11 @@ const MainMenu = () => {
           Materiały
         </NavLink>
         <NavLink
-          onClick={() => openMenuHandler("gift-sertificats")}
+          onClick={() => openMenuHandler("Bony Podarunkowe")}
           activeClassName={classes.Active}
           to="/gift-sertificats"
         >
-          Certyfikaty podarunkowe
+          Bony Podarunkowe
         </NavLink>
       </div>
     </div>

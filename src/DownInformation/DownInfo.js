@@ -2,7 +2,7 @@ import classes from "./DownInfo.module.css";
 
 const DownInfo = () => {
   return (
-    <div className={classes.DownInfo}>
+    <footer className={classes.DownInfo}>
       <div>
         <h3>GODZINY PRACY</h3>
         <p>Pn-Czw 10:00-20:00</p>
@@ -22,7 +22,7 @@ const DownInfo = () => {
         <h3>ONLINE</h3>
         <span>Zoom, Skype, Google Meet, WhatsApp</span>
       </div>
-    </div>
+    </footer>
   );
 };
 

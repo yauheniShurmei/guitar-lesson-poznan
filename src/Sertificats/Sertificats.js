@@ -7,29 +7,29 @@ import classes from "../Styles/MainStyle.module.css";
 const Sertificats = () => {
   return (
     <div className={classes.Main}>
-      <h1>Certyfikaty</h1>
+      <h1>Bony</h1>
       <div className={classes.Certyfikaty}>
         <div>
           <img src={certyfikat_01_640x425} alt="guitar lesson" />
-          <p>50zł</p>
+          <p>70zł</p>
           <h3>Jedna Lekcja</h3>
           <span>Jedna godzina zajęć</span>
         </div>
         <div>
           <img src={certyfikat_02_640x425} alt="guitar lesson" />
-          <p>100zł</p>
+          <p>130zł</p>
           <h3>Dwie Lekcji</h3>
           <span>Dwie godziny zajęć</span>
         </div>
         <div>
           <img src={certyfikat_03_640x425} alt="guitar lesson" />
-          <p>150zł</p>
+          <p>190zł</p>
           <h3>Trzy Lekcji</h3>
           <span>Trzy godziny zajęć</span>
         </div>
         <div>
           <img src={certyfikat_04_640x425} alt="guitar lesson" />
-          <p>200zł</p>
+          <p>250zł</p>
           <h3>Cztery Lekcji</h3>
           <span>Cztery godziny zajęć</span>
         </div>
